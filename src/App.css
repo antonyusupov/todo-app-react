@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo__list-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(252, 211, 136);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo__list-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.todo__list-content h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(10, 73, 73);
+  padding: 1rem 0;
+}
+
+.todo__list-content input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgb(10, 73, 73);
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 2px solid rgb(10, 73, 73);
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+
+.todo__list-content button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background: rgb(10, 73, 73);
+  padding: 0.5rem 3rem;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.todo__list-content ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 3rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo__list-content ul li p {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(10, 73, 73);
+  text-transform: capitalize;
+  padding-right: 1rem;
+}
+
+.todo__list-content ul li button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background: rgb(10, 73, 73);
+  padding: 0.5rem;
+  color: white;
+  cursor: pointer;
 }
